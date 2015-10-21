@@ -1,0 +1,1 @@
+select count(fldSection),fldBuilding from tblSections group by fldBuilding; 

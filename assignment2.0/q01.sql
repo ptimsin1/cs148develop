@@ -1,0 +1,3 @@
+select pmkNetId from tblTeachers;
+
+

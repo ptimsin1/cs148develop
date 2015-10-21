@@ -1,0 +1,1 @@
+ select fldCourseName from tblCourses where fldCourseName like 'Data%' and fldCourseName not in ('CS');
