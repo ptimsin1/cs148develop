@@ -16,6 +16,12 @@
             print '<li><a href="tables.php">Display Tables</a></li>';
         }
         
+        if ($path_parts['filename'] == "Four Year Plan") {
+            print '<li class="activePage">Four Year Plan</li>';
+        } else {
+            print '<li><a href="q01.php">Four Year Plan</a></li>';
+        }
+        
         //if ($path_parts['filename'] == "populate-table.php") {
             //print '<li class="activePage">Populate Tables</li>';
         //} else {

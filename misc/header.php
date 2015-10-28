@@ -6,7 +6,7 @@
             <figcaption>Prakriti Timsina.</figcaption>
     </figure>
     <h1>CS 148</h1>
-    <h2>Assignment 2.0</h2>
+    <h2>Friday Assignment</h2>
 </header>
 
 <!-- %%%%%%%%%%%%%%%%%%%%% Ends Page header   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->

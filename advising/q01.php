@@ -15,9 +15,17 @@ include "top.php";
      print '<table>';
 
     //now print out each record
-    $query = 'select pmkNetId from tblTeachers'; 
+    $query = 'SELECT DISTINCT tblStudents.fldStudentsFirstName, tblStudents.fldStudentsLastName, tblFourYearPlan.fldMajor, tblFourYearPlan.fldMinor,
+                tblAdvisors.fldAdvisorsFirstName, tblAdvisors.fldAdvisorsLastName, tblSemesterPlan.fnkYear, tblSemesterPlan.fnkTerm, tblCourses.fldCourseName, tblCourses.fldDepartment, tblCourses.fldCourseNumber
+                FROM tblCourses 
+                INNER JOIN tblSemesterPlanCourses ON tblCourses.pmkCourseId = tblSemesterPlanCourses.fnkCourseId 
+                INNER JOIN tblSemesterPlan ON tblSemesterPlanCourses.fnkTerm = tblSemesterPlan.fnkTerm AND tblSemesterPlanCourses.fnkYear = tblSemesterPlan.fnkYear 
+                INNER JOIN tblFourYearPlan ON tblSemesterPlan.fnkPlanId = tblFourYearPlan.pmkPlanId
+                INNER JOIN tblStudents ON tblFourYearPlan.fnkStudentsNetId = tblStudents.pmkStudentsNetId
+                INNER JOIN tblAdvisors ON tblFourYearPlan.fnkAdvisorsNetId = tblAdvisors.pmkAdvisorsNetId
+                ORDER BY tblSemesterPlanCourses.fldDisplayOrder'; 
     //$info2 = $thisDatabaseReader->testquery($query, "", 0, 0, 0, 0, false, false);
-    $info2 = $thisDatabaseReader->select($query, "", 0, 0, 0, 0, false, false);
+    $info2 = $thisDatabaseReader->select($query, "", 0, 2, 0, 0, false, false);
     
     $columns = 1;
     
