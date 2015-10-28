@@ -59,7 +59,7 @@ include "top.php";
     print '</tr>';
    // print '<table>';
     $highlight = 0; // used to highlight alternate rows
-    print '<p>Total Records:'. count($info2). '</p>';
+   // print '<p>Total Records:'. count($info2). '</p>';
     print '<p>SQL'. $query. '</p>';
     
     $variable = array_keys($array-variable);
