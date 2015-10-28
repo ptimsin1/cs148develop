@@ -92,3 +92,9 @@ nav ol li{
     text-align: left;
 }
 
+table :hover
+{
+    background-color: aqua;
+    border: 2px solid red; 
+}
+
