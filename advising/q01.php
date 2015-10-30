@@ -49,10 +49,27 @@ include "top.php";
         print '<th>' . $message . '</th>';
     }
 
+    
+   
+    
+  
+    $lastTerm = ""; 
+    
     $highlight = 0; // used to highlight alternate rows
     //print '<p>Total Records:'. count($info2). '</p>';
     print '<p>SQL'. $query. '</p>';
     foreach ($info2 as $rec) {
+        
+    //making it look nicer
+    $currentTerm = $rec ["fnkYear"] . $rec["fnkTerm"];
+    
+    if($currentTerm != $lastTerm)
+    {
+        print("<td><tr></tr><td>");
+        $lastTerm = $currentTerm;
+    }
+    
+        
         $highlight++;
         if ($highlight % 2 != 0) {
             $style = ' odd ';
