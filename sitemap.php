@@ -49,7 +49,14 @@
 </ul>
 
 <p><a href="advising/index.php">Advising </a></p>
-
+<ul style="list-style-type:circle">
+    <li><a href="advising/q01.php">Four Year Plan </a></li>
+    <li><a href="advising/betterER.pdf">ER Diagram </a></li>
+    <li><a href="advising/schema.pdf">Schema</a></li>
+    
+ 
+    
+</ul>
 
 
 </body>

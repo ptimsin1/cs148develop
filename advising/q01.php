@@ -12,11 +12,11 @@ include "top.php";
 
 
    
-     print '<table>';
+    
 
     //now print out each record
     $query = 'SELECT DISTINCT tblStudents.fldStudentsFirstName, tblStudents.fldStudentsLastName, tblFourYearPlan.fldMajor, tblFourYearPlan.fldMinor,
-                tblAdvisors.fldAdvisorsFirstName, tblAdvisors.fldAdvisorsLastName, tblSemesterPlan.fnkYear, tblSemesterPlan.fnkTerm, tblCourses.fldCourseName, tblCourses.fldDepartment, tblCourses.fldCourseNumber
+                tblAdvisors.fldAdvisorsFirstName, tblAdvisors.fldAdvisorsLastName, tblSemesterPlan.fnkYear, tblSemesterPlan.fnkTerm, tblCourses.fldCourseName, tblCourses.fldCredits, tblCourses.fldDepartment, tblCourses.fldCourseNumber
                 FROM tblCourses 
                 INNER JOIN tblSemesterPlanCourses ON tblCourses.pmkCourseId = tblSemesterPlanCourses.fnkCourseId 
                 INNER JOIN tblSemesterPlan ON tblSemesterPlanCourses.fnkTerm = tblSemesterPlan.fnkTerm AND tblSemesterPlanCourses.fnkYear = tblSemesterPlan.fnkYear 
@@ -27,11 +27,30 @@ include "top.php";
     //$info2 = $thisDatabaseReader->testquery($query, "", 0, 0, 0, 0, false, false);
     $info2 = $thisDatabaseReader->select($query, "", 0, 2, 0, 0, false, false);
     
-    $columns = 1;
+   // echo "/n>";
+    $columns = 13;
     
+      $headerFields = array_keys($info2[0]);
+      $headerArray = array_filter($headerFields, "is_string");
+    
+    echo "<h2> Records: " . count($info2) . "</h2>";
+    print '<table>';
+    
+    //header block
+    print '<tr class="tblHeaders">';
+    
+    
+    foreach ($headerArray as $key) {
+        $camelCase = preg_split('/(?=[A-Z])/', substr($key, 3));
+        $message = "";
+        foreach ($camelCase as $one) {
+            $message .= $one . " ";
+        }
+        print '<th>' . $message . '</th>';
+    }
 
     $highlight = 0; // used to highlight alternate rows
-    print '<p>Total Records:'. count($info2). '</p>';
+    //print '<p>Total Records:'. count($info2). '</p>';
     print '<p>SQL'. $query. '</p>';
     foreach ($info2 as $rec) {
         $highlight++;

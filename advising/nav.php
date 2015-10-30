@@ -16,10 +16,25 @@
             print '<li><a href="tables.php">Display Tables</a></li>';
         }
         
+        //Four year plan
         if ($path_parts['filename'] == "Four Year Plan") {
             print '<li class="activePage">Four Year Plan</li>';
         } else {
             print '<li><a href="q01.php">Four Year Plan</a></li>';
+        }
+        
+        //ER Diagram
+        if ($path_parts['filename'] == "Four Year Plan") {
+            print '<li class="activePage">ER Diagram</li>';
+        } else {
+            print '<li><a href="betterER.pdf">ER Diagram</a></li>';
+        }
+        
+        //Schema 
+        if ($path_parts['filename'] == "Schema") {
+            print '<li class="activePage">Schema</li>';
+        } else {
+            print '<li><a href="schema.pdf">Schema</a></li>';
         }
         
         //if ($path_parts['filename'] == "populate-table.php") {
