@@ -27,8 +27,10 @@ include "top.php";
     //$info2 = $thisDatabaseReader->testquery($query, "", 0, 0, 0, 0, false, false);
     $info2 = $thisDatabaseReader->select($query, "", 0, 2, 0, 0, false, false);
     
-   // echo "/n>";
+   
     $columns = 13;
+   
+     print("<td><tr></tr><td>");
     
       $headerFields = array_keys($info2[0]);
       $headerArray = array_filter($headerFields, "is_string");
@@ -65,6 +67,8 @@ include "top.php";
     
     if($currentTerm != $lastTerm)
     {
+        print("<td><tr></tr><td>");
+        print("<td><tr></tr><td>");
         print("<td><tr></tr><td>");
         $lastTerm = $currentTerm;
     }
