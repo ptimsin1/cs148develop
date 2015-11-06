@@ -23,6 +23,14 @@
             print '<li><a href="q01.php">Four Year Plan</a></li>';
         }
         
+         //Four year plan
+        if ($path_parts['filename'] == "Four Year Plan 2") {
+            print '<li class="activePage">Four Year Plan 2</li>';
+        } else {
+            print '<li><a href="q02.php">Four Year Plan 2</a></li>';
+        }
+        
+        
         //ER Diagram
         if ($path_parts['filename'] == "Four Year Plan") {
             print '<li class="activePage">ER Diagram</li>';

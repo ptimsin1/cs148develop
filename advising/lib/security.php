@@ -31,10 +31,10 @@ function securityCheck($path_parts, $yourURL, $form = false) {
     $whiteListPages[] = "q01.php";
     $whiteListPages[] = "q01.sql";
     
-    /**
+    
     $whiteListPages[] = "q02.php";
     $whiteListPages[] = "q02.sql";
-    
+    /**
     $whiteListPages[] = "q03.php";
     $whiteListPages[] = "q03.sql";
     
