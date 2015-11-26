@@ -59,6 +59,16 @@
     
 </ul>
 
+<p><a href="assignment10/index.php">Movie </a></p>
+<ul style="list-style-type:circle">
+    <li><a href="assignment10/tables.php">Table</a></li>
+    <li><a href="assignment10/">Movie Stuff </a></li>
+    <li><a href="assignment10/betterER.pdf">ER Diagram </a></li>
+    <li><a href="assignment10/schema.pdf">Schema</a></li>
+    
+ 
+    
+</ul>
 
 </body>
 
