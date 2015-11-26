@@ -28,7 +28,7 @@
         if ($path_parts['filename'] == "About") {
             print '<li class="activePage">About</li>';
         } else {
-            print '<li><a href="name.php">About</a></li>';
+            print '<li><a href="about.php">About</a></li>';
         }
         
         //Suggestions
