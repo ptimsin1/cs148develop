@@ -59,10 +59,15 @@
     
 </ul>
 
-<p><a href="assignment10/index.php">Movie </a></p>
+<p><a href="assignment10/index.php">Home </a></p>
 <ul style="list-style-type:circle">
     <li><a href="assignment10/tables.php">Table</a></li>
-    <li><a href="assignment10/">Movie Stuff </a></li>
+    <li><a href="assignment10/currentMovieSchedule.php"> Current Show Times </a></li>
+    <li><a href="assignment10/movieDescription.php"> Movie Descriptions </a></li>
+    <li><a href="assignment10/currectMovieSchedule.php"> About </a></li>
+    <li><a href="assignment10/currectMovieSchedule.php"> Suggestions </a></li>
+    <li><a href="assignment10/currectMovieSchedule.php"> Upcoming </a></li>
+    <li><a href="assignment10/currectMovieSchedule.php"> Employment  </a></li>
     <li><a href="assignment10/betterER.pdf">ER Diagram </a></li>
     <li><a href="assignment10/schema.pdf">Schema</a></li>
     

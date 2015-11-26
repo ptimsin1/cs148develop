@@ -5,10 +5,10 @@ require_once('lib/custom-functions.php');
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>CS148 Assignment 2.0</title>
+        <title>CS148 Assignment 10</title>
         <meta charset="utf-8">
-        <meta author="Prakriti Timsina" content="cs148, assignment2.0,tables, courses, sections, techers">
-        <meta description="The table shows the class info about coures name, teacher, times" content="cs148,assingment2.0, tables, courses, sections, techers">
+        <meta author="Prakriti Timsina" content="cs148, assignment10,tables, movie, schedule, upcoming">
+        <meta description="Movie theater website" content="cs148,assingment10, tables, courses, sections, techers">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
