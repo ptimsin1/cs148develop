@@ -1,13 +1,31 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 <style>
+body 
+{
+    background-image: url("background.jpg");
+}
+
+
 #header {
     background-color:black;
     color:white;
     text-align:center;
     padding:5px;
 }
+
+
 #nav {
     line-height:30px;
     background-color:#eeeeee;
@@ -17,8 +35,8 @@
     padding:5px;	      
 }
 #section {
-    width:350px;
-    float:left;
+    width:1000px;
+    float:l;
     padding:10px;	 	 
 }
 #footer {
