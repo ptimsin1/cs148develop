@@ -1,17 +1,47 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+    background-color:#4169E1;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:#4169E1;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
 
-//##############################################################################
-//
-// This page lists your tables and fields within your database. if you click on
-// a database name it will show you all the records for that table. 
-// 
-// 
-// This file is only for class purposes and should never be publicly live
-//##############################################################################
+<?php
 include "top.php";
 
+?>
+<body>  
 
-   
+<div id="header">
+<h1>Current Movie Schedule</h1>
+</div>
+
+    <?php
      print '<table>';
 
     //now print out each record
@@ -25,7 +55,7 @@ include "top.php";
    $headerFields = array_keys($info2[0]);
    $headerArray = array_filter($headerFields, "is_string");
     
-    echo "<h2> Records: " . count($info2) . "</h2>";
+   // echo "<h2> Records: " . count($info2) . "</h2>";
     print '<table>';
     //header block
     print '<tr class="tblHeaders">';
@@ -63,5 +93,13 @@ include "top.php";
     print '</aside>';
 
 print '</article>';
+
+?>
+ <div id="footer">
+<?php
 include "footer.php";
 ?>
+ </div>
+
+</body>
+</html>
