@@ -10,11 +10,13 @@ include "top.php";
 ?>
 
 <div id="header">
-<h1>Suggestions</h1>
+<h1>Employment</h1>
 </div>
 
 <?php
-echo"Suggestions page will be coming soon"; 
+ 
+
+echo"Emplyment page will be coming soon"; 
 
 ?>
 

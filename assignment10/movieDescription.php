@@ -9,9 +9,13 @@
 // This file is only for class purposes and should never be publicly live
 //##############################################################################
 include "top.php";
+?>
 
+<div id="header">
+<h1>Digi Pix Home Page</h1>
+</div>
 
-   
+<?php   
      print '<table>';
 
     //now print out each record
@@ -63,5 +67,12 @@ include "top.php";
     print '</aside>';
 
 print '</article>';
+
+?>
+
+
+<div id="footer">
+<?php
 include "footer.php";
 ?>
+ </div>

@@ -23,6 +23,7 @@ body
     color:white;
     text-align:center;
     padding:5px;
+    border: 1px solid red;
 }
 
 
@@ -34,10 +35,16 @@ body
     float:left;
     padding:5px;	      
 }
+
+#div{
+    background-color:#4169E1;
+}
+
 #section {
     width:1000px;
     float:l;
-    padding:10px;	 	 
+    padding:10px;
+    background-color: #839e99 ;
 }
 #footer {
     background-color:black;
