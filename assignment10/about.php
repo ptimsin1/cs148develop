@@ -28,7 +28,7 @@ Employment <br>
 <div id="section">
 <h2>History</h2>
 <br>
-<p> PM^2's Digi Pix Cinema has been a in Downtown Burlington since 2000.  From day one we have specialized in bringing an eclectic mix of films that the community is intrested in. We are locally owned by the PM^2 Theatre group who has had a strong presence in Downtown Burlington for many years!</p> 
+<p> PM^2's Digi Pix Cinema has been a in Burlington since 2000.  From day one we have specialized in bringing an eclectic mix of films that the community is intrested in. We are locally owned by the PM^2 Theatre group who has had a strong presence in Burlington for many years!</p> 
 <br>
 <p>PM^2Theatres has embraced the innovations in comfort, picture and sound at first by installing comfortable luxury rocker chairs and digital sound in our auditoriums.  In March of 2013 we will take the bigger plunge of converting our projection booth to total a digital presentation.  We are no stranger to Digital Presentation as Moving Pictures--our Flagship Stadium Seating Theatre in Williston--was the first to bring Digital projection, Digital 3D and 7.1 Sound to Vermont! </p> 
 <br>
@@ -43,7 +43,11 @@ Employment <br>
 
 <div>
 <h2>Location</h2>
-<p>20 Church Street Burlington, VT 05401</p>
+<p>Votey Hall, UVM Burlington, VT 05401</p>
+</div>
+
+<div>
+    <iframe src="https://mapsengine.google.com/map/embed?mid=zYqtd2ktlY2I.kN3FwOP_QGnU" width="640" height="480"></iframe>
 </div>
 
 <div>

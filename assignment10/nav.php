@@ -42,6 +42,13 @@
             print '<li><a href="suggestions.php"><button>Suggestions</button></a></li>';
         }
         
+          //Suggestions
+        if ($path_parts['filename'] == "Suggestions Listed") {
+            print '<li class="activePage"><button>Suggestions Listed</button></li>';
+        } else {
+            print '<li><a href="post.php"><button>Suggestions List</button></a></li>';
+        }
+        
         //Upcoming
         if ($path_parts['filename'] == "Upcoming") {
             print '<li class="activePage"><button>Upcoming</button></li>';
