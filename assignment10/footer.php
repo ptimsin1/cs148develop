@@ -1,6 +1,6 @@
 <!-- @@@@@@@@@@@@@@@@@@@@@@     Footer            @@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 <footer>
-    <p>Web site designed by Prakriti Timsina.</p>
+    <p>Web site designed by Prakriti Timsina, Maddie Palmer and Meaghan Winter.</p>
 </footer>
 <!-- @@@@@@@@@@@@@@@@@@@@ Ends Footer             @@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 

@@ -12,16 +12,23 @@ include "top.php";
 </div>
 
     <?php
-     print '<table>';
+    // print '<table>';
 
-    //now print out each record
-    $query = 'select distinct pmkTimeStart, fldTitle, fldRating, fldLength from tblSchedule inner join tblMovies on pmkMovieId where pmkMovieId = fnkMovieId'; 
-    //$info2 = $thisDatabaseReader->testquery($query, "", 1, 0, 0, 0, false, false);
-    $info2 = $thisDatabaseReader->select($query, "", 1, 0, 0, 0, false, false);
-    
-    $columns = 4;
-    
+    $columns = 4; 
+    $query = 'select distinct fldPicture,pmkTimeStart from tblSchedule inner join tblMovies on pmkMovieId where pmkMovieId = fnkMovieId';
+//$info2 = $thisDatabaseReader->testquery($query, "", 0, 0, 0, 0, false, false);
+    $queryDescription = $thisDatabaseReader->select($query, "", 1, 0, 0, 0, false, false);
 
+//print '<tr>';
+foreach ($queryDescription as $rec) {
+    
+    print '<span class="description"><img class="imgdescription" src="' . $rec['fldPicture'] . '">';
+    print '<p class="txtdescription"><b>Time Start:</b> ' . $rec['pmkTimeStart'] . '</p></span>';
+    
+    
+}
+    
+/**
    $headerFields = array_keys($info2[0]);
    $headerArray = array_filter($headerFields, "is_string");
     
@@ -63,6 +70,8 @@ include "top.php";
     print '</aside>';
 
 print '</article>';
+ * 
+ */
 
 ?>
  <div id="footer">

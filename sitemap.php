@@ -63,6 +63,7 @@
 <ul style="list-style-type:circle">
     <li><a href="assignment10/try.php">Testing</a></li>
     <li><a href="assignment10/tables.php">Table</a></li>
+    <li><a href="assignment10/pricing.php">Movie Prices</a></li>
     <li><a href="assignment10/currentMovieSchedule.php"> Current Show Times </a></li>
     <li><a href="assignment10/movieDescription.php"> Movie Descriptions </a></li>
     <li><a href="assignment10/about.php"> About </a></li>

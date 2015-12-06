@@ -170,8 +170,10 @@ button:active {
     line-height:30px;
     background-color:#eeeeee;
     height:300px;
-    width:100px;
-    float:left;
+    width:100%;
+    text-align:center;
+    
+    float:left; 
     padding:5px;	      
 }
 #section {
@@ -186,4 +188,5 @@ button:active {
     text-align:center;
     padding:5px;	 	 
 }
+
 

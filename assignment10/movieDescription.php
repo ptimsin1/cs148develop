@@ -12,15 +12,15 @@ include "top.php";
 ?>
 
 <div id="header">
-<h1>Digi Pix Home Page</h1>
+<h1>Digi Pix Movie Description</h1>
 </div>
 
 <?php   
     //print '<table>';
 
 //now print out each record
-$columns = 2; 
-$query = 'SELECT fldPicture, fldDescription FROM tblMovies';
+//$columns = 2; 
+$query = 'SELECT fldPicture,fldDescription, fldRating, fldLength FROM tblMovies';
 //$info2 = $thisDatabaseReader->testquery($query, "", 0, 0, 0, 0, false, false);
 $queryDescription = $thisDatabaseReader->select($query, "", 0, 0, 0, 0, false, false);
 
@@ -29,7 +29,9 @@ foreach ($queryDescription as $rec) {
     
     print '<span class="description"><img class="imgdescription" src="' . $rec['fldPicture'] . '">';
     print '<p class="txtdescription"><b>Description:</b> ' . $rec['fldDescription'] . '</p></span>';
-    
+    print '<p class="txtdescription"><b>Rating:</b> ' . $rec['fldRating'] . '</p></span>';
+    print '<p class="txtdescription"><b>Length:</b> ' . $rec['fldLength'] . '</p></span>';
+   
 }
 //print '</tr>';
 //print '</table>';

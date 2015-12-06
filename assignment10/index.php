@@ -21,6 +21,7 @@ print '<h2>Welcome!</h2>';
 print '<p> Welcome! Thank you for coming to this movie site.  </p>';
 print '</article>';
 
+print '<article>';
 //maddie's stuff
 $columns = 2; 
 $query = 'SELECT fldPicture, fldDescription FROM tblMovies';
@@ -33,9 +34,16 @@ foreach ($queryDescription as $rec) {
     print '</div>';
 }
 print '</div>';
+print '</article>';
+
 
 //end maddie's stuff
+
+
+
 ?>
+
+
 
 <div id="footer">
 <?php
