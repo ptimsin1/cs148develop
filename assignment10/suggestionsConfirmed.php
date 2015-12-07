@@ -16,11 +16,11 @@ include "top.php";
      print '<table>';
 
     //now print out each record
-    $query = 'select * from tblUserInfo'; 
+    $query = 'select fldConfirmed from tblUserInfo'; 
     //$info2 = $thisDatabaseReader->testquery($query, "", 0, 0, 0, 0, false, false);
     $info2 = $thisDatabaseReader->select($query, "", 0,0, 0, 0, false, false);
     
-    $columns = 10;
+    $columns = 1;
     
 
    $headerFields = array_keys($info2[0]);
@@ -74,20 +74,20 @@ if ($debug) {
 
 // %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 // print out the results
+
 print "<ol>\n";
+
 foreach ($users as $user) {
+
     print "<li>";
     if ($admin) {
-        print '<a href="update.php?id=' . $onePost["pmkUsername"] . '">[Edit]</a>';
-        print '<a href="delete.php?id=' . $onePost["pmkUsername"] . '">[Delete]</a>';
-        
+        print '<a href="suggestions.php?id=' . $user["fldEmail"] . '">[Edit]</a> ';
     }
-    print $users['fldTitle'] . " " . $user['fldPost']  ."</li>\n";
+    print $user['fldFirstName'] . " " . $user['fldLastName'] . " " . $user['pmkUserInfo']."</li>\n";
 }
+ 
 print "</ol>\n";
 print "</article>";
-include "footer.php";
-print "</div>";
 
 
 ?>
@@ -97,4 +97,5 @@ print "</div>";
 include "footer.php";
 ?>
  </div>
+
 

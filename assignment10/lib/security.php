@@ -18,6 +18,7 @@ function securityCheck($path_parts, $yourURL, $form = false) {
     
     // add all your page names to this array
     $whiteListPages = array();
+    $whiteListPages[] = "suggestionsConfirmed.php";
     $whiteListPages[] = "try.php";
     $whiteListPages[] = "pricing.php";
     $whiteListPages[] = "post.php";
@@ -171,24 +172,9 @@ function securityCheck($path_parts, $yourURL, $form = false) {
     return $passed;
 }
 
-function isAdmin($bdReader, $user){
-    $passed = false; 
-    
-    $quary = "SELECT mewinter, ptimsin1, mpalmer5";
-    $quary  = "tblAdmins";
-    
-    $admins = $dbReader->select($quary, "", 0,0,0,0, false, false);
-    
-    foreach ($admins as $admin)
-    {
-        if($admin['mewinter, ptimsin1, mpalmer5'] == $admin){
-            $passed = true; 
-            break; 
-        }
-    }
-    
-    return $passed; 
-}
+
+
+
 
 ?>
 

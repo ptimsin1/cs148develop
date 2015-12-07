@@ -6,6 +6,12 @@
         // This sets the current page to not be a link. Repeat this if block for
         //  each menu item 
         //  
+        
+          $username = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
+          $adminId = "SELECT * from tblAdmins";
+          $adminArray = $dbReader->select($quary, "", 0,0,0,0, false, false);
+          
+    
       
         
         //Home
@@ -73,6 +79,22 @@
             print '<li><a href="employment.php"><button>Employment</button></a></li>';
         }
         
+        //shows to only 
+        foreach($adminArray as $adminId)
+        {
+            for($i =0; $i<1; $i++)
+            {
+                
+                if(netId == $adminId[$i])
+                {
+                     if ($path_parts['filename'] == "Employment") {
+                        print '<li class="activePage"><button>Employment</button></li>';
+        }           else {
+                        print '<li><a href="employment.php"><button>Employment</button></a></li>';
+        }
+                }
+            }
+        }
       
         ?>
     </ol>
