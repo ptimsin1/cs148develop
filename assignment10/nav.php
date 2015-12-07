@@ -74,13 +74,13 @@
         }
         
         //Employment 
-        if ($path_parts['filename'] == "Employment") {
-            print '<li class="activePage"><button>Employment</button></li>';
-        } else {
-            print '<li><a href="employment.php"><button>Employment</button></a></li>';
-        }
+        //if ($path_parts['filename'] == "Employment") {
+           // print '<li class="activePage"><button>Employment</button></li>';
+       // } else {
+            //print '<li><a href="employment.php"><button>Employment</button></a></li>';
+       // }
         
-        //shows to only 
+        //shows to only admins
         foreach($adminArray as $adminId){
             //foreach($adminId as $rec){
                 //print $rec; 
