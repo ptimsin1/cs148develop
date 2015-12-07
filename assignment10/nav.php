@@ -83,7 +83,7 @@
         //shows to only admins
         foreach($adminArray as $adminId){
             foreach($adminId as $rec){
-                //print $rec; 
+                print $rec; 
             }
              
         
