@@ -86,7 +86,7 @@ foreach ($users as $user) {
 }
 print "</ol>\n";
 print "</article>";
-include "footer.php";
+
 print "</div>";
 
 
