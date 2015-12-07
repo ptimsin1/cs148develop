@@ -82,27 +82,25 @@
         
         //shows to only admins
         foreach($adminArray as $adminId){
-            //foreach($adminId as $rec){
+            foreach($adminId as $rec){
                 //print $rec; 
-            //}
+            }
              
         
-           for($i =0; $i<1; $i++)
-            {
-                
-               if($username == $adminId[$i])
-               {
-                   
-               
-                    
-                   if ($path_parts['filename'] == "Employment") 
-                       {
-                       print '<li class="activePage"><button>Employment</button></li>';
-       }           else {
-                       print '<li><a href="employment.php"><button>Employment</button></a></li>';        }
-                }
-                     
-            }
+//           for($i =0; $i<1; $i++)
+//            {
+//                
+//               if($username == $adminId[$i])
+//               {
+//                    
+//                   if ($path_parts['filename'] == "Employment") 
+//                       {
+//                       print '<li class="activePage"><button>Employment</button></li>';
+//       }           else {
+//                       print '<li><a href="employment.php"><button>Employment</button></a></li>';        }
+//                }
+//                     
+//            }
         }
         
       
