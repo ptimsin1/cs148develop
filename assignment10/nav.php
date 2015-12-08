@@ -58,13 +58,13 @@
             print '<li><a href="suggestions.php"><button>Suggestions</button></a></li>';
         }
         
-          //Suggestions
-        if ($path_parts['filename'] == "Suggestions Listed") {
-            print '<li class="activePage"><button>Suggestions Listed</button></li>';
-        } else {
-            print '<li><a href="post.php"><button>Suggestions List</button></a></li>';
-        }
-        
+//          //Suggestions Listed
+//        if ($path_parts['filename'] == "Suggestions Listed") {
+//            print '<li class="activePage"><button>Suggestions Listed</button></li>';
+//        } else {
+//            print '<li><a href="post.php"><button>Suggestions List</button></a></li>';
+//        }
+//        
         
         //About
         if ($path_parts['filename'] == "About") {
@@ -74,11 +74,11 @@
         }
         
         //Employment 
-        //if ($path_parts['filename'] == "Employment") {
-           // print '<li class="activePage"><button>Employment</button></li>';
-       // } else {
-            //print '<li><a href="employment.php"><button>Employment</button></a></li>';
-       // }
+        if ($path_parts['filename'] == "Employment") {
+            print '<li class="activePage"><button>Employment</button></li>';
+        } else {
+            print '<li><a href="employment.php"><button>Employment</button></a></li>';
+        }
         
         //shows to only admins
         foreach($adminArray as $adminId){
@@ -94,11 +94,11 @@
                {
                     //print $username . ' : ' . $adminId[$i]; 
                     
-                   if ($path_parts['filename'] == "Employment") 
-                       {
-                       print '<li class="activePage"><button>Employment</button></li>';
-       }           else {
-                       print '<li><a href="employment.php"><button>Employment</button></a></li>';        }
+                if ($path_parts['filename'] == "Suggestions Listed") {
+            print '<li class="activePage"><button>Suggestions Listed</button></li>';
+        } else {
+            print '<li><a href="post.php"><button>Suggestions List</button></a></li>';
+        }
                 }
                      
             }
@@ -110,4 +110,3 @@
 </nav>
 </div>
 <!-- #################### Ends Main Navigation    ########################## -->
-

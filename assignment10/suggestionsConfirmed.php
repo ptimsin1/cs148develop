@@ -77,14 +77,35 @@ if ($debug) {
 
 print "<ol>\n";
 
-foreach ($users as $user) {
-
-    print "<li>";
-    if ($admin) {
-        print '<a href="suggestions.php?id=' . $user["fldEmail"] . '">[Edit]</a> ';
+ foreach($adminArray as $adminId){
+            //foreach($adminId as $rec){
+                //print $rec; 
+            //}
+             
+        
+           for($i =0; $i<1; $i++)
+            {
+                
+               if($username == $adminId[$i])
+               {
+                     print "<li>";
+     print "<li>";
+    if ($adminId) {
+        print '<a href="update.php?id=' . $onePost["pmkUsername"] . '">[Edit]</a>';
+        print '<a href="delete.php?id=' . $onePost["pmkUsername"] . '">[Delete]</a>';
+        
     }
     print $user['fldFirstName'] . " " . $user['fldLastName'] . " " . $user['pmkUserInfo']."</li>\n";
-}
+                    
+                   
+                }
+                     
+            }
+        }
+        
+
+
+
  
 print "</ol>\n";
 print "</article>";
