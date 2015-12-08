@@ -7,7 +7,7 @@
         //  each menu item 
         //  
         
-          $username = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
+          $pmkUserId = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
           $adminId = "SELECT * from tblAdmins";
           //$adminArray = $thisDatabaseReader->testquery($adminId, "", 0,0,0,0, false, false);
           $adminArray = $thisDatabaseReader->select($adminId, "", 0,0,0,0, false, false);
@@ -90,7 +90,7 @@
            for($i =0; $i<1; $i++)
             {
                 
-               if($username == $adminId[$i])
+               if($pmkUserId == $adminId[$i])
                {
                     //print $username . ' : ' . $adminId[$i]; 
                     

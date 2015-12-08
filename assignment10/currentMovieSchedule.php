@@ -15,7 +15,7 @@ include "top.php";
     // print '<table>';
 
     $columns = 2; 
-    $query = 'select distinct fldTitle,pmkTimeStart from tblSchedule inner join tblMovies on pmkMovieId where pmkMovieId = fnkMovieId';
+    $query = 'select distinct lstTitle,pmkTimeStart from tblSchedule inner join tblMovies on pmkMovieId where pmkMovieId = fnkMovieId';
 //$info2 = $thisDatabaseReader->testquery($query, "", 0, 0, 0, 0, false, false);
     $info2 = $thisDatabaseReader->select($query, "", 1, 0, 0, 0, false, false);
 
