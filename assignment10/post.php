@@ -9,8 +9,8 @@ $adminId = true;
 include "top.php";
 
 
-
-     print '<table>';
+print "<article>"; 
+    // print '<table>';
 
     //now print out each record
     $query = 'select * from tblUserInfo'; 
@@ -25,15 +25,15 @@ include "top.php";
     
     if ($debug) {
         print "<pre>";
-        print_r($poets);
+        print_r($info2);
         print "</pre>";
     }
     
     
 
-   $headerFields = array_keys($info2[0]);
-   $headerArray = array_filter($headerFields, "is_string");
-    
+//   $headerFields = array_keys($info2[0]);
+//   $headerArray = array_filter($headerFields, "is_string");
+//    
 //   // echo "<h2> Records: " . count($info2) . "</h2>";
 //    print '<table>';
 //    //header block
@@ -74,23 +74,20 @@ include "top.php";
 //print '</article>';
 
 
-if ($debug) {
-    print "<pre>";
-    print_r($users);
-    print "</pre>";
-}
+
+//}
 
 // %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 // print out the results
 print "<ol>\n";
-foreach ($users as $user) {
+foreach ($info2 as $user) {
     print "<li>";
     if ($adminId) {
-        print '<a href="update.php?id=' . $onePost["pmkUsername"] . '">[Edit]</a>';
-        print '<a href="delete.php?id=' . $onePost["pmkUsername"] . '">[Delete]</a>';
+        print '<a href="update.php?id=' . $onePost["pmkUserId"] . '">[Edit]</a>';
+        print '<a href="delete.php?id=' . $onePost["pmkUserId"] . '">[Delete]</a>';
         
     }
-    print $users['fldTitle'] . " " . $user['fldPost']  ."</li>\n";
+    print $users['fldFirstName'] . " " . $user['fldLastName']  ."</li>\n";
 }
 print "</ol>\n";
 print "</article>";
