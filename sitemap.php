@@ -68,13 +68,14 @@
     <li><a href="assignment10/movieDescription.php"> Movie Descriptions </a></li>
     <li><a href="assignment10/about.php"> About </a></li>
     <li><a href="assignment10/suggestions.php"> Suggestions </a></li>
-    <li><a href="assignment10/post.php"> Suggestions List </a></li>        
+    <!--<li><a href="assignment10/post.php"> Suggestions List </a></li>-->        
     <li><a href="assignment10/upcoming.php"> Upcoming </a></li>
     <li><a href="assignment10/employment.php"> Employment  </a></li>
     <li><a href="assignment10/MovieTheatreER.pdf">ER Diagram </a></li>
     <li><a href="assignment10/Schema.pdf">Schema</a></li>
     <li><a href="assignment10/specs.docx.pdf">Specs</a></li>
     <!--<li><a href="assignment10/form.php"> About </a></li>-->
+    <li><a href="https://github.com/ptimsin1/cs148develop">GitHub </a></li>
     
     
  
