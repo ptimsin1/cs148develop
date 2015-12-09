@@ -83,11 +83,11 @@ print "<ol>\n";
 foreach ($info2 as $user) {
     print "<li>";
     if ($adminId) {
-        print '<a href="update.php?id=' . $onePost["pmkUserId"] . '">[Edit]</a>';
-        print '<a href="delete.php?id=' . $onePost["pmkUserId"] . '">[Delete]</a>';
+        print '<a href="suggestions.php?id=' . $user["pmkUserId"] . '">[Edit]</a>';
+        print '<a href="deleting.php?id=' . $user["pmkUserId"] . '">[Delete]</a>';
         
     }
-    print $users['fldFirstName'] . " " . $user['fldLastName']  ."</li>\n";
+    print $user['fldFirstName'] . " " . $user['fldLastName']  ."</li>\n";
 }
 print "</ol>\n";
 print "</article>";

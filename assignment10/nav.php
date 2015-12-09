@@ -92,7 +92,7 @@
                 
                if($pmkUserId == $adminId[$i])
                {
-                    //print $username . ' : ' . $adminId[$i]; 
+                    //print $pmkUserId . ' : ' . $adminId[$i]; 
                     
                 if ($path_parts['filename'] == "Suggestions Listed") {
             print '<li class="activePage"><button>Suggestions Listed</button></li>';
