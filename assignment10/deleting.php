@@ -1,6 +1,13 @@
 <?php
 
 include "top.php";
+?>
+
+<div id="header">
+    <h1>Deleting</h1>
+</div>
+
+<?php
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 //
 // SECTION: 1 Initialize variables
@@ -35,9 +42,9 @@ if (isset($_GET["id"])) {
 //
 }
 
-print "<p>why";
+//print "<p>why";
 if (isset($_POST["btnDelete"])) {
-    print"<p>maybe";
+    //print"<p>maybe";
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 //
 // SECTION: 2a Security
@@ -54,7 +61,7 @@ if (isset($_POST["btnDelete"])) {
 // remove any potential JavaScript or html code from users input on the
 // form. Note it is best to follow the same order as declared in section 1c.
 $pmkUserId = (int) htmlentities($_POST["hidUserId"], ENT_QUOTES, "UTF-8"); 
-print "<p> id " . $pmkUserId ;
+//print "<p> id " . $pmkUserId ;
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 //
 // SECTION: 2e Save Data
@@ -66,8 +73,8 @@ print "<p> id " . $pmkUserId ;
 
                 $query = 'DELETE FROM tblUserInfo where pmkUserId = ?';
                 $data = array($pmkUserId);
-                print "<p> sql " . $query ; 
-                    $results = $thisDatabaseWriter->testquery($query,$data, 1, 0, 0, 0, false, false);
+                //print "<p> sql " . $query ; 
+                    //$results = $thisDatabaseWriter->testquery($query,$data, 1, 0, 0, 0, false, false);
                     $results = $thisDatabaseWriter->delete($query,$data, 1, 0, 0, 0, false, false);
                     
             
@@ -122,13 +129,11 @@ if ($dataEntered) { // closing of if marked with: end body Delete
 } // end body Delete
 ?>
 </article>
+<div id="footer">
+<?php
+include "footer.php";
+?>
+ </div>
 
-    <?php
-   
-    include "footer.php";
-    if ($debug)
-        print "<p>END OF PROCESSING</p>";
-    ?>
-</article>
 </body>
 </html>

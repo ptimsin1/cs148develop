@@ -1,14 +1,17 @@
+<<!DOCTYPE html>
+
+
 <?php
-/* %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
- * the purpose of this page is to display a list of poets, admin can edit
- * 
- * Written By: Prakrit Timsina ptimsin1@uvm.edu
- */
-// %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
-$adminId = true; 
 include "top.php";
 
+?>
+<body>  
 
+<div id="header">
+<h1>Admin</h1>
+</div>
+
+<?php
 print "<article>"; 
     // print '<table>';
 
@@ -87,7 +90,8 @@ foreach ($info2 as $user) {
         print '<a href="deleting.php?id=' . $user["pmkUserId"] . '">[Delete]</a>';
         
     }
-    print $user['fldFirstName'] . " " . $user['fldLastName']  ."</li>\n";
+    print $user['fldFirstName'] . " " . $user['fldLastName']  . " " . $user['fldBirthDay']  . " " . $user['fldEmail']  
+          ." " . $user['fldTitle']  ." " . $user['fldFrequency']  ."</li>\n";
 }
 print "</ol>\n";
 print "</article>";

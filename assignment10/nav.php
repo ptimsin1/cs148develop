@@ -74,10 +74,10 @@
         }
         
         //Employment 
-        if ($path_parts['filename'] == "Employment") {
-            print '<li class="activePage"><button>Employment</button></li>';
+        if ($path_parts['filename'] == "Careers") {
+            print '<li class="activePage"><button>Careers</button></li>';
         } else {
-            print '<li><a href="employment.php"><button>Employment</button></a></li>';
+            print '<li><a href="employment.php"><button>Careers</button></a></li>';
         }
         
         //shows to only admins
@@ -93,12 +93,20 @@
                if($pmkUserId == $adminId[$i])
                {
                     //print $pmkUserId . ' : ' . $adminId[$i]; 
-                    
-                if ($path_parts['filename'] == "Suggestions Listed") {
-            print '<li class="activePage"><button>Suggestions Listed</button></li>';
+                   
+                if ($path_parts['filename'] == "Database") {
+            print '<li class="activePage"><button>Database </button></li>';
         } else {
-            print '<li><a href="post.php"><button>Suggestions List</button></a></li>';
+            print '<li><a href="tables.php"><button>Database </button></a></li>';
         }
+                    
+                if ($path_parts['filename'] == "Admin") {
+            print '<li class="activePage"><button>Admin</button></li>';
+        } else {
+            print '<li><a href="post.php"><button>Admin </button></a></li>';
+        }
+        
+        
                 }
                      
             }

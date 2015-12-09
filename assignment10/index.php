@@ -18,7 +18,7 @@ include "top.php";
 // Begin output
 print '<article>';
 print '<h2>Welcome!</h2>';
-print '<p> Welcome! Thank you for coming to this movie site.  </p>';
+print '<p> Thank you for coming to this movie site. Below is titles of upcoming and current shows. Enjoy! </p>';
 print '</article>';
 
 print '<article>';

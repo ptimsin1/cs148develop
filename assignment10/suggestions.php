@@ -1,9 +1,14 @@
+<!DOCTYPE html>
+
+
 <?php
 include "top.php";
+
 ?>
+<body>  
 
 <div id="header">
-    <h1>Current Movie Schedule</h1>
+<h1>Suggestions</h1>
 </div>
 
 <?php
@@ -609,8 +614,8 @@ if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) { // closing of if marked w
 ?>
                 </article>
 
+<div id="footer">
 <?php
 include "footer.php";
-if ($debug)
-    print "<p>END OF PROCESSING</p>";
 ?>
+ </div>

@@ -12,7 +12,7 @@ include "top.php";
 ?>
 
 <div id="header">
-<h1>Digi Pix Movie Description</h1>
+<h1> Movie Description</h1>
 </div>
 
 <?php   
