@@ -1,15 +1,10 @@
 <?php
 
-//##############################################################################
-//
-// main home page for the site 
-// 
-//##############################################################################
 include "top.php";
 ?>
 
 <div id="header">
-    <h1>Suggestions</h1>
+    <h1>Current Movie Schedule</h1>
 </div>
 
 <?php
@@ -387,7 +382,6 @@ if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) { // closing of if marked w
       make it stand out that a mistake happened here.
      */
     ?>
-        
         <form action="<?php print $phpSelf; ?>"
               method="post"
               id="frmRegister">
@@ -417,6 +411,24 @@ if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) { // closing of if marked w
     <?php if ($lastNameERROR) print 'class="mistake"'; ?>
                            onfocus="this.select()"
                            >
+                </label>
+
+                <label for="txtBirthday" class="required">Birthday
+                    <input type="text" id="txtBirthday" name="txtBirthday"
+                           value="<?php print $birthday; ?>"
+                           tabindex="100" maxlength="45" placeholder="YYYY-MM-DD"
+    <?php if ($birthdayERROR) print 'class="mistake"'; ?>
+                           onfocus="this.select()"
+                           >
+                </label>  
+
+                <label for="txtEmail" class="required">Email
+                    <input type="text" id="txtEmail" name="txtEmail"
+                           value="<?php print $email; ?>"
+                           tabindex="120" maxlength="45" placeholder="Enter a valid email address"
+    <?php if ($emailERROR) print 'class="mistake"'; ?>
+                           onfocus="this.select()" 
+                           autofocus>
                 </label>
 
 

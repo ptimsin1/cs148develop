@@ -8,7 +8,7 @@
 
 include "top.php";
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
-//
+// NOT THE RIGHT ONE
 // SECTION: 1 Initialize variables
 $update = false;
 
@@ -173,7 +173,7 @@ if (isset($_POST["btnDelete"])) {
 //            }
 
             // all sql statements are done so lets commit to our changes
-            if($_SERVER["REMOTE_USER"]=='rerickso'){
+            if($_SERVER["REMOTE_USER"]=='ptimsin1'){
             $dataEntered = $thisDatabase->db->commit();
              }else{
                  $thisDatabase->db->rollback();
@@ -299,3 +299,4 @@ if ($debug)
 </article>
 </body>
 </html>
+
