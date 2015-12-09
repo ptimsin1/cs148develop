@@ -61,7 +61,7 @@
 
 <p><a href="assignment10/index.php">Home </a></p>
 <ul style="list-style-type:circle">
-    <li><a href="assignment10/try.php">Testing</a></li>
+    <!--<li><a href="assignment10/try.php">Testing</a></li> -->
     <li><a href="assignment10/tables.php">Table</a></li>
     <li><a href="assignment10/pricing.php">Movie Prices</a></li>
     <li><a href="assignment10/currentMovieSchedule.php"> Current Show Times </a></li>
@@ -73,8 +73,9 @@
     <li><a href="assignment10/upcoming.php"> Upcoming </a></li>
     <li><a href="assignment10/employment.php"> Employment  </a></li>
     <li><a href="assignment10/MovieTheatreER.pdf">ER Diagram </a></li>
-    <li><a href="assignment10/schema.pdf">Schema</a></li>
-    <li><a href="assignment10/form.php"> About </a></li>
+    <li><a href="assignment10/Schema.pdf">Schema</a></li>
+    <li><a href="assignment10/specs.docx.pdf">Specs</a></li>
+    <!--<li><a href="assignment10/form.php"> About </a></li>-->
     
     
  

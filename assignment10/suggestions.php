@@ -10,7 +10,7 @@ include "top.php";
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 //
 // SECTION: 1 Initialize variables
-$debug = true;
+$debug = false;
 $update = false;
 
 // SECTION: 1e misc variables
@@ -293,19 +293,20 @@ $dataPick [] = $pmkUserId;
             if ($update){
                 $queryPick .= 'WHERE fnkUserId = ?';
                 $dataPick [] = $pmkUserId;
-print "<p>SQL: " . $queryPick;
-print "<p> Data: " ; print_r($dataPick); 
+//print "<p>SQL: " . $queryPick;
+//print "<p> Data: " ; print_r($dataPick); 
                 
                 $resultsPick = $thisDatabaseWriter->update($queryPick, $dataPick, 1, 0, 0, 0, false, false);
             
-                print"<p> Hi"; 
+                //print"<p> Hi"; 
             }else{
                 $resultsPick = $thisDatabaseWriter->insert($queryPick, $dataPick); 
               //  $pmkUserId = $thisDatabaseWriter -> lastInsert();
             }
             
-             if ($debug)
+             if ($debug){
                     print "<p> user Id insert 1: " . $pmkUserId;
+             }
 
             $dataEntered = $thisDatabaseWriter->db->commit();
 
@@ -325,16 +326,16 @@ if ($dataEntered) {
         $query = "SELECT fldDateJoined FROM tblUserInfo WHERE pmkUserId=" . $primaryKey;
            
             $results = $thisDatabaseReader->select($query);
-            print "<p>1";
+           // print "<p>1";
             $dateSubmitted = $results[0]["fldDateJoined"];
-            print "<p>2";
+            //print "<p>2";
             $key1 = sha1($dateSubmitted);
             $key2 = $primaryKey;
             if ($debug)
                 print "<p>key 1: " . $key1;
             if ($debug)
                 print "<p>key 2: " . $key2;
-            print '<p> selct thing works</p>';
+            //print '<p> selct thing works</p>';
             //#################################################################
             //
             //Put forms information into a variable to print on the screen
@@ -366,7 +367,7 @@ if ($dataEntered) {
             $subject = "Confirm email for DigiPix";
             $mailed = sendMail($to, $cc, $bcc, $from, $subject, $messageA . $messageB . $messageC . $message);
         } //data entered  
-        print'<p>data mailed</p>';
+        //print'<p>data mailed</p>';
     } // end form is valid
 } // ends if form was submitted.
 if ($debug) {
@@ -543,7 +544,7 @@ if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) { // closing of if marked w
                               id="chkAdventure" 
                               name="chkAdventure" 
                               value="Adventure"
-    <?php if ($Adventure) print ' checked '; ?>
+    <?php if ($adventure) print ' checked '; ?>
                               tabindex="220"> Adventure</label>
             </fieldset> <!-- ends wrapper Two -->
 
